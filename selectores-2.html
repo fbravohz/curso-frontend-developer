@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector Descendiente */
+        /* Todos los <p> hijos de un <div> */
+        div p {
+            color: lime;
+        }
+        /* Selector Hijo Directo */
+        /* Un <div> que sea hijo de un <div> */
+        div > div {
+            background: plum;
+        }
+        /* Selector por Clase */
+        .es {
+            background: red;
+        }
+        /* Selector Elemento Adyacente */
+        /* Un <section> que este despues de un <div> */
+        div + section {
+            background: peru;
+        }
+        /* Selector Elemento Adyacente */
+        /* Un <div> que este despues de un <section> */
+        section + div{
+            color: blue;
+        }
+        /* Selector General de Hermanos */
+        /* Todo <p> que sea hermano de un <div> */
+        div ~ p {
+            background: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div class="es">Cheatcoder</div>
+            <p>Barasuit</p>
+            <p>Ma nig</p>
+        </div>
+    </div>
+    <p>Clase de selectores</p>
+    <section>
+        The best
+    </section>
+    <div>
+        Master
+        <p>otro hijo de un div</p>
+    </div>
+    <div>
+        Another master
+    </div>
+</body>
+</html>
